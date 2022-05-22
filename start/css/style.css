@@ -1,0 +1,178 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+  /* Delete markers */
+  list-style: none;
+}
+
+li {
+  padding-left: 0;
+}
+
+a {
+  text-decoration: none;
+  /* inherit color from parent */
+  color: inherit;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: #131313;
+}
+
+.container {
+  max-width: 1220px;
+  padding: 0 10px;
+  margin: 0 auto;
+}
+
+img.logo__img {
+  width: 200px;
+  height: 100px;
+}
+
+.header__inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu {
+  margin-right: 70px;
+}
+
+.menu__list {
+  display: flex;
+}
+
+.menu__item + .menu__item {
+  padding-left: 10px;
+}
+
+.menu__link {
+  text-transform: uppercase;
+  padding: 43px 20px;
+  transition: all 0.3s;
+}
+
+.menu__link:hover {
+  background-color: #a8b318;
+  color: #fff;
+}
+
+.game {
+  padding: 100px 0 150px;
+}
+
+.game__inner {
+  padding-top: 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.game__column-slider {
+  flex-basis: 600px;
+  margin-left: 30px;
+  max-width: 600px;
+}
+
+.game__title {
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 77px;
+  margin: 0px 0 5px;
+}
+
+.game__subtitle {
+  margin: 0 0 60px;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 39px;
+  color: #6f6f6f;
+}
+
+.game__text {
+  max-width: 420px;
+  margin-bottom: 20px;
+}
+
+.game__link {
+  margin-bottom: 80px;
+  display: inline-block;
+  background-color: #a8b318;
+  color: #fff;
+  padding: 28px 81px;
+  text-transform: uppercase;
+  font-size: 20px;
+  line-height: 24px;
+  /* space between letters */
+  letter-spacing: 1.1em;
+}
+
+img.game-slider__item {
+  padding-top: 17px;
+  width: 640px;
+  height: 435px;
+}
+
+.game-slider .slick-dots {
+  top: 20px;
+  right: 0;
+}
+
+.slick-dots {
+  position: absolute;
+}
+
+.slick-dots li + li {
+  padding-top: 10px;
+  padding-right: 5px;
+}
+
+.slick-dots button {
+  font-size: 0;
+  padding: 0;
+  border: none;
+  background-color: #a8b318;
+  width: 5px;
+  height: 25px;
+  border-radius: 7px;
+  cursor: pointer;
+  transition: all .3s;
+}
+
+.slick-dots button:hover,
+.slick-active button {
+  background-color: #fff;
+}
+
+.game__list {
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.game__list-item {
+  font-weight: 700;
+  text-transform: uppercase;
+  min-width: 160px;
+  text-align: center;
+}
+
+.game__list-item span {
+  margin-top: 5px;
+  display: block;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 15px;
+  text-transform: lowercase;
+}
